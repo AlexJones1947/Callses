@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/app_version_name"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/toolbar_color"
+        android:gravity="center"
+        android:text="CALLSESS Ver.1.0"
+        android:textColor="@android:color/white" />
+
+    <RelativeLayout
+        android:id="@+id/top_friend_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="4"
+        android:background="@color/color_hex">
+
+        <ImageView
+            android:id="@+id/speaker_off_iv"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/image_Description"
+            android:src="@drawable/speaker_off" />
+
+        <ImageView
+            android:id="@+id/speaker_on_iv"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/image_Description"
+            android:src="@drawable/speaker_on"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/incoming_call_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/speaker_off_iv"
+            android:gravity="center"
+            android:paddingRight="45dp"
+            android:text="7778812660"
+            android:textSize="20sp"
+            tools:ignore="RtlHardcoded" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/dial_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:contentDescription="@string/image_Description"
+        android:scaleType="fitXY"
+        android:src="@drawable/stop_call" />
+
+    <TextView
+        android:id="@+id/incoming_call_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:background="@color/color_hex"
+        android:gravity="center"
+        android:text="Rishit Maniyar"
+        android:textSize="20sp" />
+
+</LinearLayout>
+

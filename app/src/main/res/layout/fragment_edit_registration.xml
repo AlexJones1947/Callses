@@ -1,0 +1,398 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/general_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:padding="10dp"
+                android:text="@string/don_t_go_back_button"
+                android:textSize="20sp" />
+
+            <Switch
+                android:id="@+id/registration_main_switch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="#E0E0E0" />
+
+        <LinearLayout
+            android:id="@+id/registration_sub_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/add_cotacts_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="true"
+                    android:contentDescription="@string/image_Description"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/contacts" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#E0E0E0" />
+
+            <LinearLayout
+                android:id="@+id/phone_contact_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/friend_phone_no_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:padding="10dp"
+                    android:text="@string/friend_phone_number"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/friend_phone_no_edit_text"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="Enter Number"
+                    android:inputType="number"
+                    android:ems="15"
+                    android:maxLength="15"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:textCursorDrawable="@drawable/custom_cursor" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#E0E0E0" />
+
+            <LinearLayout
+                android:id="@+id/name_contact_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/friend_phone_name_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:padding="10dp"
+                    android:text="@string/friend_phone_name"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/friend_phone_name_edit_text"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="Enter Name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:textCursorDrawable="@drawable/custom_cursor"
+                    tools:ignore="TextFields" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#E0E0E0" />
+
+            <LinearLayout
+                android:id="@+id/list_order_contact_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/list_order_number_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:padding="10dp"
+                    android:text="@string/list_order_number"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/list_order_no_edit_text"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="1 or 2 or 3..."
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:textCursorDrawable="@drawable/custom_cursor" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#E0E0E0" />
+
+            <LinearLayout
+                android:id="@+id/record_message_switch_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/msg_box_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:padding="10dp"
+                    android:text="@string/message_box"
+                    android:textSize="20sp" />
+
+                <Switch
+                    android:id="@+id/record_message_switch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/record_message_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/record_message_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/record_message"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <Button
+                        android:id="@+id/start_record_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:clickable="true"
+                        android:text="@string/record"
+                        android:background="@color/start_record_btn"
+                        android:textColor="@android:color/black" />
+
+                    <Button
+                        android:id="@+id/stop_record_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@color/stop_record_btn"
+                        android:clickable="true"
+                        android:text="@string/re_record"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/play_record_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:background="@color/play_record_btn"
+                        android:clickable="true"
+                        android:text="Play"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/stop_playing_record_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/stop_playing_record_btn"
+                        android:layout_weight="0.5"
+                        android:clickable="true"
+                        android:text="Stop"
+                        android:textColor="@android:color/white"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/save_contact_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/save_contact_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:padding="10dp"
+                    android:text="@string/save_contact_tv"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/save_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:background="@color/save_btn"
+                    android:clickable="true"
+                    android:text="@string/save_contact"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#E0E0E0" />
+
+            <LinearLayout
+                android:id="@+id/delete_contact_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/delete_conact_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:padding="10dp"
+                    android:text="@string/delete_contact_tv"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/delete_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:background="@color/delete_btn"
+                    android:text="@string/delete_contact"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#E0E0E0" />
+
+            <LinearLayout
+                android:id="@+id/modify_contact_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/modify_conact_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:padding="10dp"
+                    android:text="@string/modify_contact_tv"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/modify_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:background="@color/modify_btn"
+                    android:text="@string/modify_contact"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#E0E0E0" />
+
+            <LinearLayout
+                android:id="@+id/clear_contact_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/clear_contact_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:padding="10dp"
+                    android:text="@string/clear_contact_tv"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/clear_filed_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/clear_btn"
+                    android:layout_weight="0.4"
+                    android:text="@string/clear_contact"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/clear_show_last_record_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:background="@color/clear_btn"
+                    android:text="@string/clear_contact"
+                    android:textColor="@android:color/black"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

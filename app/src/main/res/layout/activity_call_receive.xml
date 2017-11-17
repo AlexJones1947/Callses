@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCCCCC"
+    android:id="@+id/ll_pp"
+    android:orientation="vertical"
+    tools:context=".Receiver.PhoneCallReceiver">
+
+    <LinearLayout
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/incoming_call_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@android:color/holo_green_dark"
+            android:gravity="center"
+            android:text="+91 000000000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/dial_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/contacts" />
+
+        <TextView
+            android:id="@+id/incoming_call_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@android:color/holo_green_dark"
+            android:gravity="center"
+            android:text="Abcd"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageBtnIgnore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="22dp"
+            android:clickable="true"
+            android:contentDescription="@string/image_Description"
+            android:onClick="ignoreCall"
+            android:src="@drawable/ic_ignore" />
+
+        <ImageView
+            android:id="@+id/imageBtnAccept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:clickable="true"
+            android:contentDescription="@string/image_Description"
+            android:onClick="acceptCall"
+            android:src="@drawable/ic_accept" />
+    </LinearLayout>
+</LinearLayout>

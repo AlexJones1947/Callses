@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Callses</string>
+    <string name="image_Description">This is imageview</string>
+    <string name="don_t_go_back_button">Don’t go back button</string>
+    <string name="message_box">Listen to  the name of the caller</string>
+    <string name="friend_phone_number">Friend Phone Number</string>
+    <string name="friend_phone_name">Friend Phone Name</string>
+    <string name="new_contact">New Contact</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete_contact">Delete Contact</string>
+    <string name="modify_contact">Modify Contact</string>
+    <string name="save_contact">Save Contact</string>
+    <string name="delete_contact_tv">Delete Contact</string>
+    <string name="save_contact_tv">Save Contact</string>
+    <string name="modify_contact_tv">Modify Contact</string>
+    <string name="clear_contact_tv">Clear Contact</string>
+    <string name="clear_contact">Clear Contact</string>
+    <string name="list_order_number">List Order Number</string>
+    <string name="listent_to_the_name_of_persion">Listent to the name of persion</string>
+    <string name="uknown_caller">Uknown caller</string>
+    <string name="play_recorded">Play Recorded</string>
+    <string name="select_sound">Select Sound</string>
+    <string name="rerecord_sound">Rerecord Sound</string>
+    <string name="save_sound">Save Sound</string>
+    <string name="record_message">Record Message</string>
+    <string name="record">Record</string>
+    <string name="re_record">Stop</string>
+    <string name="spinner_title">Hello</string>
+    <string name="set_as_ringtone">Set as Ringtone</string>
+
+
+</resources>
